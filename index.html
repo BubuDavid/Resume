@@ -1,592 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- ============= UNICONS ============= -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ============= SWIPER CSS ============= -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A simple resume template built with Flask, based on Start Bootstrap resume template. Grats Rodolfo Ferro.">
-    <meta name="author" content="David Pedroza Segoviano <david.pedroza.segoviano@gmail.com>">
+    <!-- ============= CSS ============= -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <title>Portfolio - David Bubu</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="static/css/resume.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/36435547" type="image/x-icon">
-
+    <title>David Bubu Resume!</title>   
 </head>
+<body class="dark-theme">
+  <!-- =============== HEADER =============== -->
+	<header class="header" id="header">
+			<nav class="nav container">
+					<a href="#" class="nav__logo">David </a>
 
-<body id="page-top">
+							<div class="nav__menu" id="nav-menu">
+									<ul class="nav__list grid"> 
+											<li class="nav__item">
+													<a href="#home" class="nav__link active-link">
+															<i class="nav__icon uil uil-estate"></i> Home
+													</a>
+											</li>
+											<li class="nav__item">
+													<a href="#about" class="nav__link">
+															<i class="nav__icon uil uil-user"></i> About
+													</a>
+											</li>
+											<li class="nav__item">
+													<a href="#skills" class="nav__link">
+															<i class="uil uil-brackets-curly nav__icon"></i> Skills
+													</a>
+											</li>
+											<li class="nav__item">
+													<a href="#achievements" class="nav__link">
+                            <i class="nav__icon uil uil-trophy"></i> Achievements
+													</a>
+											</li>
+											<li class="nav__item">
+													<a href="#portfolio" class="nav__link">
+															<i class="nav__icon uil uil-scenery"></i> Portfolio
+													</a>
+											</li>
+											<li class="nav__item">
+													<a href="#contact" class="nav__link">
+															<i class="nav__icon uil uil-message"></i> Contact
+													</a>
+											</li>
+									</ul>
+									<i class="uil uil-times nav__close" id="nav-close"></i>
+							</div>
+							
+							<div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-sun change-theme" id="theme-button"></i>
+									<div class="nav__toggle" id="nav-toggle">
+											<i class="uil uil-apps"></i>
+									</div>
+							</div>
+			</nav>
+	</header>
+	<!-- =============== MAIN =============== -->
+	<main class="main">
+		<!--==================== HOME ====================-->
+		<section class="home section" id="home">
+					<div class="home__container container grid">
+							<div class="home__content grid">
+									<div class="home__social">
+											<a href="https://www.linkedin.com/in/davidpedrozasegoviano/" class="home__social-icon">
+													<i class="uil uil-linkedin-alt"></i>
+											</a>
+											<a href="https://github.com/BubuDavid" class="home__social-icon">
+                        <i class="uil uil-github-alt"></i>
+											</a>
+                      <a href="https://www.facebook.com/DavidWeroBubu/" class="home__social-icon">
+                          <i class="uil uil-facebook-f"></i>
+                      </a>
+									</div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none text-white subheading">David Pedroza Segoviano Bubu</span>
-            <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://avatars.githubusercontent.com/u/50858626?v=4" alt="">
-      </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#community">Community</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#workshops">Workshops</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+									<div class="home__img">
+											<svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<mask id="mask0" mask-type="alpha">
+															<path d="M45,-74.2C55.7,-63,60.2,-46.3,65.3,-31C70.4,-15.7,76.3,-2,75.4,11.5C74.5,25,67,38.3,57.2,49.6C47.4,61,35.4,70.4,21.6,75.1C7.8,79.9,-7.8,79.9,-21.4,74.9C-34.9,70,-46.4,60,-56.6,48.7C-66.8,37.5,-75.8,24.8,-79,10.6C-82.2,-3.6,-79.7,-19.4,-71.9,-31.2C-64,-43.1,-50.9,-50.9,-38,-61.2C-25.2,-71.4,-12.6,-84.1,2.3,-87.6C17.1,-91.1,34.2,-85.5,45,-74.2Z" transform="translate(100 100)"/>
+													</mask>
+													<g mask="url(#mask0)">
+															<path d="M45,-74.2C55.7,-63,60.2,-46.3,65.3,-31C70.4,-15.7,76.3,-2,75.4,11.5C74.5,25,67,38.3,57.2,49.6C47.4,61,35.4,70.4,21.6,75.1C7.8,79.9,-7.8,79.9,-21.4,74.9C-34.9,70,-46.4,60,-56.6,48.7C-66.8,37.5,-75.8,24.8,-79,10.6C-82.2,-3.6,-79.7,-19.4,-71.9,-31.2C-64,-43.1,-50.9,-50.9,-38,-61.2C-25.2,-71.4,-12.6,-84.1,2.3,-87.6C17.1,-91.1,34.2,-85.5,45,-74.2Z" transform="translate(100 100)"/>
+															<image class="home__blob-img" href="./assets/img/pp.png" x="20" y="20"/>
+													</g>
+											</svg>
+											
+									</div>
 
-    <div class="container-fluid p-0">
+									<div class="home__data">
+											<h1 class="home__title">Hi there, I'm David</h1>
+											<h3 class="home__subtitle">Physics student, ML enthusiast & Future Software Develper</h3>
+											<p class="home__description">
+                        Python, JS and puppy lover 🐍💛🐶<div class=""></div></p>
+											<a href="#contact" class="button button--flex">
+													Contactme<i class="uil uil-message button__icon"></i>
+											</a>
+									</div>
+							</div>
 
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-            <div class="w-100">
-                <h1 class="mb-0">David Pedroza Segoviano <br>
-                    <span class="text-primary">Bubu</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Leon, Guanajuato ·
-                    <a href="mailto:david.pedroza.segoviano@gmail.com">david.pedroza.segoviano@gmail.com</a>
+							<div class="home__scroll">
+									<a href="#about" class="home__scroll-button button--flex">
+											<i class="uil uil-mouse-alt home__scroll-mouse"></i>
+											<span class="home__scroll-name">Scroll down</span>
+											<i class="uil uil-angle-double-down home__scroll-arrow"></i>
+									</a>
+							</div>
+					</div>
+		</section>
+
+		<!--==================== ABOUT ====================-->
+		<section class="about section" id="about">
+				<section class="about section" id="about">
+						<h2 class="section__title">About Me</h2>
+						<!-- <span class="section__subtitle">My introduction</span> -->
+
+						<div class="about__container container grid">
+								<img src="assets/img/about.jpg" alt="About Image" class="about__img">
+
+								<div class="about__data">
+										<p class="about__description">
+												Physics student and code lover. Proficient when operating Python, and JavaScript. Learning web development. Machine learning and quantum computing enthusiast. Hardworker and a great teamworker.
+										</p>
+
+										<div class="about__info">
+												<div>
+														<span class="about__info-title">04+</span>
+														<span class="about__info-name">Comunities</span>
+												</div>
+												<div>
+														<span class="about__info-title">03+</span>
+														<span class="about__info-name">Projects</span>
+												</div>
+										</div>
+
+										<div class="about__buttons">
+												<a download="" href="./assets/pdf/CV-SEP-2021.pdf" class="button button--flex">
+														Download CV<i class="uil uil-download-alt button__icon"></i>
+												</a>
+										</div>
+								</div>
+						</div>
+				</section>
+
+		</section>
+
+		<!--==================== SKILLS ====================-->
+		<section class="skills section" id="skills">
+			<h2 class="section__title">Skills</h2>
+			<span class="section__subtitle">I know some stuff</span>
+
+			<div class="skills__container container grid">
+				<div>
+					<!-- ============ Frontend ============ -->
+					<div class="skills__content skills__close">
+							<div class="skills__header">
+                <i class="uil uil-object-group skills__icon"></i>
+
+									<div>
+											<h1 class="skills__title">Frontend Developer</h1>
+											<span class="skills__subtitle">Beginner</span>
+									</div>
+
+									<i class="uil uil-angle-down skills__arrow"></i>
+							</div>
+
+							<div class="skills__list grid">
+                <div class="skills__logos">
+                  <img src="./assets/icons/html.png" alt="HTML Icon" class="skills__logo">
+                  <img src="./assets/icons/css.png" alt="CSS Icon" class="skills__logo">
+                  <img src="./assets/icons/js.png" alt="JS Icon" class="skills__logo">
                 </div>
-                <p class="lead mb-5">Physics undergraduate student with background in mathematics and programming. I consider myself proficient when operating Python, and JavaScript. Currently I'm learning web development with Node JS, Django, React, and more. I'm a machine
-                    learning and quantum computing enthusiast. I have participated on a large amount of competitions, such as: competitive programming, hackathons and Olympiads in mathematics, physics, informatics, etc. Winning several of them. I have
-                    knowledge of algorithms for complex problems, optimization and time complexity calculus. I know how to be persistent and work under pressure. Besides that, I find teamwork as one of my major skills.
+                <div class="skills__description">
+                  Fluent writting HTML, CSS and JS for frontend Developer.
+                </div>
+							</div>
+					</div>
+
+					<!-- ============ Backend ============ -->
+					<div class="skills__content skills__close">
+							<div class="skills__header">
+									<i class="uil uil-server skills__icon" ></i>
+
+									<div>
+											<h1 class="skills__title">Backend Developer</h1>
+											<span class="skills__subtitle">Starting</span>
+									</div>
+
+									<i class="uil uil-angle-down skills__arrow"></i>
+							</div>
+
+							<div class="skills__list grid">
+                <div class="skills__logos">
+                  <img src="./assets/icons/python.png" alt="Python Icon" class="skills__logo">
+                  <img src="./assets/icons/mongo.png" alt="MongoDB Icon" class="skills__logo">
+                  <img src="./assets/icons/sql.png" alt="SQL Icon" class="skills__logo">
+                </div>
+                <div class="skills__description">
+                  I've worked with <span class="skills__highlight">Flask</span>, <span class="skills__highlight">Django</span>, <span class="skills__highlight">MongoDB</span> and I am learning <span class="skills__highlight">SQL</span> with the <span class="skills__highlight">MySQL</span>
+                  workbench.
+                </div>
+							</div>
+					</div>
+
+				</div>
+
+				<div>
+					<!-- ============ Math and Physics ============ -->
+					<div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly skills__icon"></i>
+							<div>
+								<h1 class="skills__title">Programming</h1>
+								<span class="skills__subtitle">More than 5 years</span>
+							</div>
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+            <div class="skills__list grid">
+              <div class="skills__logos">
+                <img src="./assets/icons/python.png" alt="Python Icon" class="skills__logo">
+                <img src="./assets/icons/js.png" alt="Node Icon" class="skills__logo">
+                <img src="./assets/icons/cpp.png" alt="MongoDB Icon" class="skills__logo">
+              </div>
+              <div class="skills__description">
+                Experienced programming on <span class="skills__highlight">Python</span> with <span class="skills__highlight">Numpy</span>, <span class="skills__highlight">Pandas</span>, <span class="skills__highlight">Matplotlib</span> and <span class="skills__highlight">Scikit-Learn</span>. Learning <span class="skills__highlight">Tensor Flow</span>. Some experence with <span class="skills__highlight">JS</span> working with API calls and asynchronous code like callbacks, promises and async/await structures. I used to write C++ code in the Olympiad.
+              </div>
+            </div>
+					</div>
+
+          <div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-x-add skills__icon"></i>
+							<div>
+								<h1 class="skills__title">Math & Physics</h1>
+								<span class="skills__subtitle">Current Career</span>
+							</div>
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+            <div class="skills__list grid">
+              <div class="skills__logos">
+                <img src="./assets/icons/math.png" alt="Math Icon" class="skills__logo">
+                <img src="./assets/icons/physics.png" alt="Physics Icon" class="skills__logo">
+              </div>
+              <div class="skills__description">
+                Strong math bases with <span class="skills__highlight">Advanced Linear Algebra</span>, <span class="skills__highlight">Calculus</span> (Differential, Integral and Vectorial), <span class="skills__highlight">Statistics</span> also knowledge of <span class="skills__highlight">Electromagnetism</span>, <span class="skills__highlight">Quantum Mechanics</span>, <span class="skills__highlight">Statistical Mechanics</span>, etc...
+                 I have great teching skills.
+              </div>
+            </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ==================== Achievements ==================== -->
+		<section class="achievements section" id="achievements">
+      <h2 class="section__title">Achievements</h2>
+      <span class="section__subtitle">Some cool stuff about me, I love challenges</span>
+      
+      <div class="achievements__container container">
+        <div class="achievements__tabs">
+          
+          <div class="achievements__button button--flex">
+            <i class="uil uil-book-alt achievements__icon"></i>
+            Education <span class="achievements__separator">&</span>  Awards <i class="uil uil-trophy achievements__icon"></i>
+          </div>
+        </div>
+
+        <div class="achievements__sections">
+          <!-- ==================== ACHIEVEMENT CONTENT 1 =================== -->
+          <div class="achievement__content">
+            <!-- ==================== ACHIEVEMENT 1 =================== -->
+            <div class="achievement__data">
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-book-alt achievement__icon"></i> High School</h3>
+                <span class="achievement__subtitle">León, Gto - De la Salle Campus Américas</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2015 - 2018
+                </div>
+              </div>
+
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+            </div>
+
+            <!-- ==================== ACHIEVEMENT 2 =================== -->
+            <div class="achievement__data">
+              <div></div>
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-medal achievements__icon"></i> Bronze Medal</h3>
+                <span class="achievement__subtitle">Guanajuato - Regional Olympiad in Informatics</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2015
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- ==================== ACHIEVEMENT 3 =================== -->
+            <div class="achievement__data">
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-trophy achievements__icon"></i>Gold Medal</h3>
+                <span class="achievement__subtitle">Guanajuato - Regional Olympiad in Informatics</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2016
+                </div>
+              </div>
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+            </div>
+            
+            <!-- ==================== ACHIEVEMENT 4 =================== -->
+            <div class="achievement__data">
+              <div></div>
+              
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-trophy achievements__icon"></i>2nd National Place</h3>
+                <span class="achievement__subtitle">Monterrey - World Educational Robot Contest</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2016
+                </div>
+              </div>
+            </div>
+            <!-- ==================== ACHIEVEMENT 5 =================== -->
+            <div class="achievement__data">
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-trophy achievements__icon"></i>1st Place</h3>
+                <span class="achievement__subtitle">FEDEMATICAS - Math Contest</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2017
+                </div>
+              </div>
+
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+            </div>
+
+            <!-- ==================== ACHIEVEMENT 6 =================== -->
+            <div class="achievement__data">
+              <div></div>
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-book-alt achievement__icon"></i>Bachelor of Science in Physics </h3>
+                <span class="achievement__subtitle">University of Guanajuato Campus Leon</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018
+                </div>
+              </div>
+            </div>
+            <!-- ==================== ACHIEVEMENT 7 =================== -->
+            <div class="achievement__data">
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-medal achievements__icon"></i>3rd Place</h3>
+                <span class="achievement__subtitle">Hackathon - Hack-Leon Seguridad Total</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2019
+                </div>
+              </div>
+
+              <div>
+                <span class="achievement__rounder"></span>
+                <span class="achievement__line"></span>
+              </div>
+           
+            </div>
+
+            <!-- ==================== ACHIEVEMENT 8 =================== -->
+            <div class="achievement__data">
+              <div></div>
+              
+              <div>
+                <span class="achievement__rounder"></span>
+                <!-- <span class="achievement__line"></span> -->
+              </div>
+
+              <div>
+                <h3 class="achievement__title"><i class="uil uil-medal achievements__icon"></i>3rd Place</h3>
+                <span class="achievement__subtitle">Hackathon - Lince-Hack</span>
+                <div class="achievement__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2019
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+		</section>
+
+		<!-- ==================== SERVICES ==================== -->
+		<!-- <section class="services section" id="services">
+				
+
+		</section> -->
+
+		<!--==================== PORTFOLIO ====================-->
+		<section class="portfolio section" id="portfolio">
+				<h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Some cool projects!</span>
+
+        <div class="portfolio__container container swiper">
+          <div class="swiper-wrapper">
+            <!-- ============== PORTFOLIO 1 =============== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/resume.png" alt="Project 1 Img" class="portfolio__img">
+
+              <div class="porfolio__data">
+                <h3 class="portfolio__title">Responsive Resume</h3>
+                <p class="portfolio__description">
+                  Responsive Amazing HTML, CSS and JS resume page based on <a href="https://github.com/bedimcode/responsive-portfolio-website-Alexa">This project</a>.
                 </p>
-                <div class="social-icons">
-
-                    <a href="https://github.com/BubuDavid/" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/DavidWeroBubu/" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/davidpedrozasegoviano/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/channel/UCaQLn15OcwwGr_skoUEmB_Q" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-
+                <div class="portfolio__buttons">
+                  <a href="https://github.com/BubuDavid/Resume" class="button button-github button--flex button--small portfolio__button">
+                    <i class="uil uil-github button__github-icon"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+            <!-- ============== PORTFOLIO 2 =============== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/spotwipy.png" alt="Project 1 Img" class="portfolio__img">
 
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-            <div class="w-100">
-                <h2 class="mb-5">Skills</h2>
-
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-                <ul class="list-inline dev-icons">
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-python"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-html5"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-css3-alt"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-js-square"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-markdown"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-git-alt"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-github"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-google-drive"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-slack"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-trello"></i>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <i class="fab fa-windows"></i>
-                    </li>
-
-                </ul>
-
-                <div class="subheading mb-3">Extra skills / knowledge</div>
-                <ul class="fa-ul mb-0">
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Physics - EM, Classical Mechanics, Quantum Physcis, etc.</li>
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Mathematics - Linear Algebra, Differential Equations, Complex Variable, etc.</li>
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Data Analysis with Python</li>
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Web Development</li>
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Machine Learning and Deep Learning</li>
-
-                    <li>
-                        <i class="fa-li fa fa-check"></i> Flask, Django, NumPy, Matplotlib, TensorFlow, Pandas, etc.</li>
-
-                </ul>
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-            <div class="w-100">
-                <h2 class="mb-5">Awards</h2>
-                <ul class="fa-ul mb-0">
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 3rd. Place in Lince-Hack 2019, Celaya Institute of Technology, 2019</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 2nd. National Place - World Educational Robot Contest Mexico, 2016</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> Gold medal - Estatal Olympiad in Informatics, Investigation Math Center (CIMAT), 2016</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 1st. Place - Fedemáticas, Leon Guanajuato Federation of Particular Schools, 2017</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 3rd. Place - Hack-león Seguridad Total, Leon General Directorate of innovation, 2019</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 1st. Place - Scholar Physicist Olympiad, La Salle University, 2017</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> 1st. Place - Scholar Math Olympiad, La Salle University, 2017</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> Best Video - World Educational Robot Contest, Video Category, 2016</li>
-
-                    <li class="bubu-awards">
-                        <i class="fa-li fa fa-trophy text-warning"></i> Bronze Medal - Estatal Olympiad in Informatics, 2015</li>
-
-                </ul>
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-            <div class="w-100">
-                <h2 class="mb-5">Projects</h2>
-                <p>This section contains some projects that I am currently developing:</p>
-                <!-- Begins card -->
-                <div class="row">
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/flask-resume-template.png" class="card-img-top" alt="flask-resume-template">
-                            <div class="card-body">
-                                <h3 class="card-title">flask-resume-template</h3>
-                                <h5 class="card-title">A resume template built with Flask - fork from Rodolfo Ferro</h5>
-                                <p class="card-text">An easy-to-configure simple resume template built with Flask and Bootstrap.</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Flask</span>
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">Bootstrap</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://github.com/BubuDavid/flask-resume-template" class="text-dark" target="_blank">
-                                    <i class="fab fa-github-square fa-2x"></i>
-                                </a>
-
-                                <a href="" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/talks1.png" class="card-img-top" alt="Scientific and Technology presential talks and workshops">
-                            <div class="card-body">
-                                <h3 class="card-title">Scientific and Technology presential talks and workshops</h3>
-                                <h5 class="card-title">Talks to kids and high school people (Cecyt 17, Salle, etc...).</h5>
-                                <p class="card-text">Talks with the purpose of encourage young people to pursuit a scientific or technological career.</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Science</span>
-                                    <span class="badge badge-pill badge-secondary">Tech</span>
-                                    <span class="badge badge-pill badge-secondary">Inspiration</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://www.facebook.com/golf.fisica/photos/a.117680670079960/125956765919017" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/sharedu.png" class="card-img-top" alt="Sharedu">
-                            <div class="card-body">
-                                <h3 class="card-title">Sharedu</h3>
-                                <h5 class="card-title">WebPage to share education</h5>
-                                <p class="card-text">Webpage for sharing challenges, contests, courses and hackathons, for all young people that wants to build knowledge.</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Django</span>
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">Webpage</span>
-                                    <span class="badge badge-pill badge-secondary">HTML</span>
-                                    <span class="badge badge-pill badge-secondary">JS</span>
-                                    <span class="badge badge-pill badge-secondary">CSS</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://bubudavid.github.io/Sharedu/" class="btn btn-dark float-right" target="_blank">View project</a>
-                                <a href="https://github.com/BubuDavid/Sharedu" class="text-dark" target="_blank">
-                                    <i class="fab fa-github-square fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/fl_channel.png" class="card-img-top" alt="Future Lab YouTube Channel">
-                            <div class="card-body">
-                                <h3 class="card-title">Future Lab YouTube Channel</h3>
-                                <h5 class="card-title">Courses, Workshops and Speaks to learn!</h5>
-                                <p class="card-text">As a member of Future Lab I disseminate science, make technology speaks and elaborate courses completely free in our youtube channel</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">Videos</span>
-                                    <span class="badge badge-pill badge-secondary">Youtube</span>
-                                    <span class="badge badge-pill badge-secondary">technology</span>
-                                    <span class="badge badge-pill badge-secondary">puppies</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://www.youtube.com/c/FutureLabmx/videos" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/youtube_channel.png" class="card-img-top" alt="YouTube Channel">
-                            <div class="card-body">
-                                <h3 class="card-title">YouTube Channel</h3>
-                                <h5 class="card-title">Technologic and Scientific Channel</h5>
-                                <p class="card-text">A work in progress youtube channel for tech lovers, science curious and geeks.</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">YouTube</span>
-                                    <span class="badge badge-pill badge-secondary">Videos</span>
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">Physics</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://www.youtube.com/channel/UCaQLn15OcwwGr_skoUEmB_Q" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/iris.png" class="card-img-top" alt="Web Page with Iris flower classification">
-                            <div class="card-body">
-                                <h3 class="card-title">Web Page with Iris flower classification</h3>
-                                <h5 class="card-title">A decision tree built inside a web page</h5>
-                                <p class="card-text">With help of Rodolfo Ferro and Zaid de Anda we made a functional web page with BULMA CSS framework and a decision tree built in python to classify iris flowers by sepal and petal length</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">Machine Learning</span>
-                                    <span class="badge badge-pill badge-secondary">Web Platform</span>
-                                    <span class="badge badge-pill badge-secondary">Flask</span>
-                                    <span class="badge badge-pill badge-secondary">Decision tree</span>
-                                    <span class="badge badge-pill badge-secondary">BULMA</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://github.com/BubuDavid/Flask_Challenge" class="text-dark" target="_blank">
-                                    <i class="fab fa-github-square fa-2x"></i>
-                                </a>
-
-                                <a href="https://flask-challenge.glitch.me/" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <img src="static/img/twitter.png" class="card-img-top" alt="Analyzing tweets with python">
-                            <div class="card-body">
-                                <h3 class="card-title">Analyzing tweets with python</h3>
-                                <h5 class="card-title">Playing with the Twitter API and preprocessing more than 100 tweets.</h5>
-                                <p class="card-text">Our main objective is to provide a model capable of recognizing trends in young people, this will help us create events related to these trends so that more people are interested.</p>
-                                <p>
-
-                                    <span class="badge badge-pill badge-secondary">Python</span>
-                                    <span class="badge badge-pill badge-secondary">NLP</span>
-                                    <span class="badge badge-pill badge-secondary">Keras</span>
-                                    <span class="badge badge-pill badge-secondary">Twitter</span>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-
-                                <a href="https://github.com/BubuDavid/Analyzing-Tweets-with-Python" class="text-dark" target="_blank">
-                                    <i class="fab fa-github-square fa-2x"></i>
-                                </a>
-
-                                <a href="https://github.com/BubuDavid/Analyzing-Tweets-with-Python" class="btn btn-dark float-right" target="_blank">View project</a>
-                            </div>
-                        </div>
-                    </div>
-
+              <div class="porfolio__data">
+                <h3 class="portfolio__title">SpoTwipy - Shuffle!</h3>
+                <p class="portfolio__description">
+                  Web App conecting Spotify and Twitter to select 5 random songs and, with a bot, tweet a musical tweet!
+                </p>
+                
+                <div class="portfolio__buttons">
+                  <a href="http://spotwipy-shuffle.glitch.me/" class="button button--flex button--small portfolio__button">
+                    Demo <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  <a href="https://github.com/BubuDavid/SpoTwipy" class="button button-github button--flex button--small portfolio__button">
+                    <i class="uil uil-github button__github-icon"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+            <!-- ============== PORTFOLIO 3 =============== -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./assets/img/colorpicker.png" alt="Project 1 Img" class="portfolio__img">
 
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="community">
-            <div class="w-100">
-                <h2 class="mb-5">Community and social activity</h2>
-
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Future Lab</h3>
-                        <div class="subheading mb-3">Coordinator</div>
-                        <div>I am a coordinator at Future Lab, a community full of students, tech lovers, passionate developers and science enthusiasts that work together with great fellowship. We have 4 main objectives: 1. Develop social, academic and personal
-                            projects with technology. 2. Disseminate science and technic knowledge, with courses, workshops and speaks, accessible for everyone! 3. Help other communities and projects with common goals. 4. Participate and help others to
-                            participate in hackathons or different kind of contests or challenges.</div>
-
-                        <a href="https://futurelab.mx">Know more</a>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">April 2018 - Present</span>
-                    </div>
+              <div class="porfolio__data">
+                <h3 class="portfolio__title">Color Picker</h3>
+                <p class="portfolio__description">
+                  Page that uses numpy, openCV and sklearn to find the color palette of any image on internet.
+                </p>
+                
+                <div class="portfolio__buttons">     
+                  <a href="https://palette-bubupicker.glitch.me/" class="button button--flex button--small portfolio__button">
+                    Demo <i class="uil uil-arrow-right button__icon"></i>
+                  </a>
+                  <a href="https://github.com/BubuDavid/Color-Palette_Picker" class="button button-github button--flex button--small portfolio__button">
+                    <i class="uil uil-github button__github-icon"></i>
+                  </a>
                 </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Organized Group of Physics Undergrads (GOLF)</h3>
-                        <div class="subheading mb-3">Community member</div>
-                        <div>Community Member of GOLF (its acronym in Spanish), organized group full of passionate students of Guanajuato University, aiming for the expansion of scientific knowledge mainly physics, and strive for creation of student environment
-                            that is inclusive, welcoming, and healthy among our university campus and also inside of the community GOLF itself.</div>
-
-                        <a href="https://www.facebook.com/golf.fisica">Know more</a>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">October 2020 - Present</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Leon Youth Scientific Society (SJC)</h3>
-                        <div class="subheading mb-3">Community member</div>
-                        <div>Community of dissemination of science and creator of many workshop to wake scientific curiousing in young people. &#34;In today&#39;s youth is the science of the future&#34;</div>
-
-                        <a href="https://scj.org.mx/">Know more</a>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2018 - December 2019</span>
-                    </div>
-                </div>
-
+              </div>
             </div>
-        </section>
 
-        <hr class="m-0">
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
 
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="workshops">
-            <div class="w-100">
-                <h2 class="mb-5">Talks, Courses &amp; Workshops</h2>
-                <p>Some of the courses, workshops and talks I have taken or given</p>
-                <ul class="fa-ul mb-0">
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>PROTON-VIVE MEXICO,</strong>
-                        <sup><a href='http://www.protoncertification.org/' target="_blank" class="badge badge-pill badge-danger">
-              Event site <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> International certification.
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>Santander</strong>
-                        <sup><a href='http://santander.skills.anuies.mx/' target="_blank" class="badge badge-pill badge-danger">
-              Event site <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> Introducción a las habildades digitales
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>Clubes de Ciencia México 2019.</strong>
-                        <sup><a href='https://rodolfoferro.xyz/hyperspectrum/' target="_blank" class="badge badge-pill badge-primary">
-              Material <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> Workshop – Revealing the Hidden Hyperspectrum with Artificial Neurons, July 2019.
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>LAB León Web Dev Crash Course 2019.</strong>
-                        <sup><a href='https://github.com/RodolfoFerro/Flask101' target="_blank" class="badge badge-pill badge-primary">
-              Material <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <sup><a href='https://flask101.glitch.me' target="_blank" class="badge badge-pill badge-danger">
-              Event site <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> Crash Course – Introduction to Web Development with Python and Flask, August 2019, I was helping as an intern.
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>How to make your first web page for a hackathon.</strong>
-                        <br> Workshop – Webpage Delepment, August 2019.
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>Lab León</strong>
-                        <sup><a href='https://drive.google.com/file/d/1IR0NGFYts6i0eCFKRVEfRcpChndB_-ho/view?usp=sharing' target="_blank" class="badge badge-pill badge-danger">
-              Event site <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> Workshop - Taller prototipo para la apertura y uso de datos abiretos, June 2019
-                    </li>
-
-                    <li>
-
-                        <i class="fa-li fa fa-shapes text-info"></i>
-                        <strong>Taller de Ciencia para Jóvenes.</strong>
-                        <sup><a href='https://drive.google.com/file/d/19poUjHOm93Cj-2nG0SZq8QpWkPs6FLOb/view?usp=sharing' target="_blank" class="badge badge-pill badge-primary">
-              Material <i class="fa fa-external-link-alt text-light"></i>
-            </a></sup>
-                        <br> Participation in the workshop, July 2019.
-                    </li>
-
-                </ul>
-
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-            <div class="w-100">
-                <h2 class="mb-5">Education</h2>
-
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">University of Guanajuato / DCI</h3>
-                        <div class="subheading mb-3">Bachelor of Science in Physics</div>
-                        <div>Major in Physics with Data Science and Machine Learning as terminal area.</div>
-                        <p></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2018 - Present</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">De la Salle Bajio Campus Americas</h3>
-                        <div class="subheading mb-3">High School</div>
-                        <div>Graduated from mathematical physics area.</div>
-                        <p></p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2015 - July 2018</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <div class="container">
-            <p class="small float-right">Credits to <a href="https://rodolfoferro.xyz" target="_blank">Rodolfo Ferro</a>, for this <a href="https://startbootstrap.com/theme/resume" target="blank">template</a> template under a MIT License.</p>
         </div>
+
+		</section>
+
+		<!--==================== PROJECT IN MIND ====================-->
+		<!-- <section class="project section">
+      <div class="project__bg">
+        <div class="project container container grid">
+          <div class="project__data">
+            <h2 class="project__title"></h2>
+          </div>
+        </div>
+      </div>
+
+		</section> -->
+
+		<!--==================== TESTIMONIAL ====================-->
+		<!-- <section class="testimonial section">
+				
+
+		</section> -->
+
+		<!--==================== CONTACT ME ====================-->
+		<section class="contact section" id="contact">
+      <h2 class="section__title">Contactme</h2>
+      <span class="section__subtitle">Call me maybe 🎶</span>
+
+      <div class="contact__container container grid">
+
+        <div>
+          <div class="contact__info">
+            <i class="uil uil-envelope-alt contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email me!</h3>
+              <span class="contact__subtitle">david.pedroza.segoviano@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__info">
+            <i class="uil uil-user-location contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Where?</h3>
+              <span class="contact__subtitle">León Guanajuato, México</span>
+            </div>
+          </div>
+        </div>
+        
+        <form action="mailto:david.pedroza.segoviano@gmail.com" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="name" class="contact__label">Name</label>
+              <input required type="text" class="contact__input">
+            </div>
+            <div class="contact__content">
+              <label for="email" class="contact__label">Email</label>
+              <input required type="email" class="contact__input">
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <label for="message" class="contact__label">Message</label>
+            <textarea required name="" id="" cols="0" rows="7" class="contact__input" placeholder="This is a static page, so you will not be able to send this mail directly from here, sorry I am working on it."></textarea>
+          </div>
+          
+          <div>
+            <button class="button button--flex button--submit">
+              Send Message <i class="uil uil-message button__icon"></i>
+            </>
+          </div>
+          
+        </form>
+
+      </div>
+		</section>
+
+
+	</main>
+
+	<!-- =============== FOOTER =============== -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">David</h1>
+          <span class="footer__subtitle">Software Developer</span>
+        </div>
+
+        <ul class="footer__links">
+          
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contactme</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/DavidWeroBubu/" class="footer__social">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/david_bubu73/" class="footer__social">
+            <i class="uil uil-instagram"></i>
+          </a>
+          <a href="https://twitter.com/DBubu73" class="footer__social">
+            <i class="uil uil-twitter-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">From Mexico with 💙 to the World! </p>
     </div>
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="static/vendor/jquery/jquery.min.js"></script>
-    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- =============== SCROLL TOP =============== -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-circle-up scrollup__icon"></i>
+  </a>
+	<!-- =============== SWIPER JS =============== -->
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+	<!-- =============== MAIN JS =============== -->
+	<script src="./assets/js/main.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="static/js/resume.min.js"></script>
 
 </body>
-
 </html>
